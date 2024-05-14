@@ -1,0 +1,11 @@
+<!-- sample_menu.xml -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_favorit"
+        android:icon="@drawable/ic_heart"
+        android:title="@string/action_favorit"
+        app:showAsAction="always"/>
+</menu>

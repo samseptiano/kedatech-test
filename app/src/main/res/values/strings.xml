@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rawg App</string>
+    <string name="search_hint">Find the best game here…</string>
+    <string name="action_favorit">Favorit</string>
+    <string name="add_favorit">Tambah Ke Favorit</string>
+    <string name="remove_favorit">Hapus Dari Favorit</string>
+    <string name="msg_search_result">Search: %1$s</string>
+    <string name="no_data">Tidak Ada Data</string>
+</resources>

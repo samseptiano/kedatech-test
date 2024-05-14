@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.GameListFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/titleGame"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/titleGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iconGame"
+        app:layout_constraintStart_toEndOf="@id/iconGame"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:text="Hahaha Hehehe"/>
+
+    <TextView
+        android:id="@+id/releaseGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleGame"
+        app:layout_constraintStart_toStartOf="@id/titleGame"
+        android:text="Release at: 2025/03/15"/>
+
+    <TextView
+        android:id="@+id/btn_add_favorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_favorit"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/releaseGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:drawableStartCompat="@drawable/grey_heart_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
